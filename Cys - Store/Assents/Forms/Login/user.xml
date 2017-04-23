@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cadastro>
+  <funcionarios>
+    <Administradores>
+      <Logs>  
+        <login>root</login>
+        <senha>encoder</senha>
+      <privilegios previleg="acess_level">0</privilegios>
+        <dados>
+          <nome>Daniel Batista da Silva</nome>
+          <email>danbsilv@gmail.com</email>
+        </dados>
+
+      </Logs>
+      
+      
+      
+      
+      
+    </Administradores>  
+    
+    
+    
+    
+  </funcionarios>
+  
+  
+  
+  
+  
+</cadastro>
