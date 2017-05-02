@@ -13,21 +13,36 @@ using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using System.Xml;
 using System.Xml.XPath;
-
+using System.Data.Sql;
+using MySQL.Data;
+using MySql.Data.MySqlClient;
+using Cys___Store.Classes;
 
 namespace Cys___Store
+
 {
+
     public partial class SplashScreen : Form
+
     {
         public SplashScreen()
         {
             InitializeComponent();
+            
+            CRUD crod = new CRUD();
+            //cyt.SuspendLayout();
+            
+                
+                //CYS_SISTEMA sistema = new CYS_SISTEMA();
+                //Application.Exit();
+           
 
+            // sistema.Show();
 
 
         }
 
-
+        
         private void tempoSplash_Tick(object sender, EventArgs e)
         {
             if (BarraCronometro.Value == 100)
@@ -48,10 +63,7 @@ namespace Cys___Store
             }
         }
 
-        private void BarraCronometro_Click(object sender, EventArgs e)
-        {
-
-        }
+    
 
         private void SairSistema_Click(object sender, EventArgs e)
         {
@@ -78,13 +90,16 @@ namespace Cys___Store
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             EsqueciSenha sho = new EsqueciSenha();
-
+            
+            
             sho.Show();
 
         }
 
         private void Login_Click(object sender, EventArgs e)
         {
+            CRUD obcrud = new CRUD();
+            
 
             string login = textlogin.Text;
             login.TrimStart();
@@ -94,8 +109,16 @@ namespace Cys___Store
             else if (senha == "") { MessageBox.Show("Campo Senha Vazio."); }
             else
             {
-                LoginSistema logar = new LoginSistema();
-                logar.Login(login, senha);
+                try {
+                    //obcrud.Inserir();
+                    obcrud.Login_banco(login, senha);
+                }
+                catch { }
+                finally {
+                    LoginSistema logar = new LoginSistema();
+                    logar.Login(login, senha);
+                }
+                
             }
 
 
@@ -108,100 +131,110 @@ namespace Cys___Store
         protected internal int Login(string lgn, string snh)
         {
 
-            XMLConect(lgn, snh);
+            //XMLConect(lgn, snh);
 
 
             return 0;
         }
 
 
+        private
+
+
+
+        /*        private void XMLConect(string log, string senha)
+               {
+                   try
+                   {
+                       string doc = @"C:\Users\danbs\Documents\Pass\user.xml";
+                       XmlDocument file = new XmlDocument();
+                       file.Load(doc);
+
+                       XmlTextReader r = new XmlTextReader(doc);
+
+                       while (r.Read())
+                       {
+
+
+                           XmlNode nod1 = file.SelectSingleNode(@"cadastro/Administradores/Logs/login");
+                           XmlNode nod2 = file.SelectSingleNode(@"cadastro/Administradores/Logs/senha");
+                           XPathNavigator nav = file.CreateNavigator();
+                           XPathNodeIterator iet1 = nav.Select("cadastro/funcionarios/Administradores/Logs/login");
+                           XPathNodeIterator iet2 = nav.Select("cadastro/funcionarios/Administradores/Logs/senha");
+                           while (iet1.MoveNext())
+                           {
+                               if (iet1.Current.Value == log)
+                               {
+
+
+
+                                   while (iet2.MoveNext())
+                                   {
+                                       if (iet2.Current.Value == senha)
+                                       {
+                                           MessageBox.Show("Login Efetuado com Sucesso");
+                                           SplashScreen form = new SplashScreen();
+                                           Cys___Store.CysLabel label = new CysLabel();
+
+
+                                           form.Close();
+                                           Application.ExitThread();
+                                           Application.ExitThread();
+
+
+                                           break;
+                                       }
+                                       else if (iet2.Count == iet2.CurrentPosition)
+                                       {
+                                           MessageBox.Show("Erro ao Entrar");
+                                           break;
+                                       }
+
+
+                                   }
+                                   break;
+                               }
+                               else if (iet1.Count == iet1.CurrentPosition)
+                               {
+                                   MessageBox.Show("Nenhum Usuario encontrado");
+                                   break;
+                               }
+
+
+                           }
+                           break;
 
 
 
 
-        private void XMLConect(string log, string senha)
-        {
-            try
-            {
-                string doc = @"C:\Users\danbs\Documents\Pass\user.xml";
-                XmlDocument file = new XmlDocument();
-                file.Load(doc);
-
-                XmlTextReader r = new XmlTextReader(doc);
-
-                while (r.Read())
-                {
-                    
-
-                    XmlNode nod1 = file.SelectSingleNode(@"cadastro/Administradores/Logs/login");
-                    XmlNode nod2 = file.SelectSingleNode(@"cadastro/Administradores/Logs/senha");
-                    XPathNavigator nav = file.CreateNavigator();
-                    XPathNodeIterator iet1 = nav.Select("cadastro/funcionarios/Administradores/Logs/login");
-                    XPathNodeIterator iet2 = nav.Select("cadastro/funcionarios/Administradores/Logs/senha");
-                    while (iet1.MoveNext())
-                    {
-                        if (iet1.Current.Value == log)
-                        {
-
-
-
-                            while (iet2.MoveNext())
-                            {
-                                if (iet2.Current.Value == senha)
-                                {
-                                    MessageBox.Show("Login Efetuado com Sucesso");
-                                    break;
-                                }
-                                else if (iet2.Count == iet2.CurrentPosition)
-                                {
-                                    MessageBox.Show("Erro ao Entrar");
-                                    break;
-                                }
-
-
-                            }
-                            break;
-                        }
-                        else if (iet1.Count == iet1.CurrentPosition)
-                        {
-                            MessageBox.Show("Nenhum Usuario encontrado");
-                            break;
-                        }
-
-
-                    }
-                    break;
+                       }
 
 
 
 
-                }
+                   }
+
+                   catch (UnauthorizedAccessException)
+                   {
+                       MessageBox.Show("Erro ao tentar acessar o arquivo!!! Contate o desenvolvedor.", "CYS - ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                   }
+
+                   finally
+                   {
+                       GC.Collect();
 
 
-
-
-            }
-
-            catch (UnauthorizedAccessException)
-            {
-                MessageBox.Show("Erro ao tentar acessar o arquivo!!! Contate o desenvolvedor.", "CYS - ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            finally
-            {
-                GC.Collect();
-
-
-            }
-        }
+                   }
+                   
+    }
+    */
 
 
 
 
 
 
-
-        private static void LogSucess(object source, ElapsedEventArgs e)
+      void LogSucess(object source, ElapsedEventArgs e)
         {
             MessageBox.Show("CYS - BEM VINDO", "Login com Sucesso");
 

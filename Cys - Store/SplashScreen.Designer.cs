@@ -83,14 +83,14 @@
             this.BarraCronometro.Size = new System.Drawing.Size(370, 23);
             this.BarraCronometro.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.BarraCronometro.TabIndex = 3;
-            this.BarraCronometro.Click += new System.EventHandler(this.BarraCronometro_Click);
+            
             // 
             // FormularioLogin
             // 
             this.FormularioLogin.ColumnCount = 3;
             this.FormularioLogin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.26984F));
             this.FormularioLogin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.73016F));
-            this.FormularioLogin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 49F));
+            this.FormularioLogin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.FormularioLogin.Controls.Add(this.textsenha, 1, 1);
             this.FormularioLogin.Controls.Add(this.label3, 0, 0);
             this.FormularioLogin.Controls.Add(this.label4, 0, 1);
@@ -114,7 +114,7 @@
             // 
             // textsenha
             // 
-            this.textsenha.Location = new System.Drawing.Point(139, 32);
+            this.textsenha.Location = new System.Drawing.Point(138, 32);
             this.textsenha.MaxLength = 16;
             this.textsenha.Name = "textsenha";
             this.textsenha.Size = new System.Drawing.Size(154, 20);
@@ -150,7 +150,7 @@
             this.Login.Image = global::Cys___Store.Properties.Resources.Double_J_Design_Origami_Colored_Pencil_Blue_mail_send;
             this.Login.Location = new System.Drawing.Point(3, 73);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(130, 20);
+            this.Login.Size = new System.Drawing.Size(129, 20);
             this.Login.TabIndex = 4;
             this.Login.Text = "Login";
             this.Login.UseVisualStyleBackColor = true;
@@ -162,7 +162,7 @@
             this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.linkLabel1.Location = new System.Drawing.Point(3, 55);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(130, 15);
+            this.linkLabel1.Size = new System.Drawing.Size(129, 15);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Esqueci minha Senha:";
@@ -170,7 +170,7 @@
             // 
             // textlogin
             // 
-            this.textlogin.Location = new System.Drawing.Point(139, 3);
+            this.textlogin.Location = new System.Drawing.Point(138, 3);
             this.textlogin.Name = "textlogin";
             this.textlogin.Size = new System.Drawing.Size(176, 20);
             this.textlogin.TabIndex = 2;
@@ -179,7 +179,7 @@
             // 
             this.SairSistema.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.SairSistema.Image = global::Cys___Store.Properties.Resources.Awicons_Vista_Artistic_Delete;
-            this.SairSistema.Location = new System.Drawing.Point(139, 73);
+            this.SairSistema.Location = new System.Drawing.Point(138, 73);
             this.SairSistema.Name = "SairSistema";
             this.SairSistema.Size = new System.Drawing.Size(136, 20);
             this.SairSistema.TabIndex = 7;
@@ -191,9 +191,9 @@
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::Cys___Store.Properties.Resources.Alecive_Flatwoken_Apps_Bleachbit;
-            this.pictureBox2.Location = new System.Drawing.Point(332, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(331, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(44, 23);
+            this.pictureBox2.Size = new System.Drawing.Size(45, 23);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -204,9 +204,9 @@
             this.pictureBox3.BackgroundImage = global::Cys___Store.Properties.Resources.Alecive_Flatwoken_Apps_Bleachbit;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Location = new System.Drawing.Point(332, 32);
+            this.pictureBox3.Location = new System.Drawing.Point(331, 32);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(44, 20);
+            this.pictureBox3.Size = new System.Drawing.Size(45, 20);
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);

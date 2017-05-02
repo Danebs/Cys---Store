@@ -169,5 +169,15 @@ namespace Cys___Store.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_Gradient_Squares_Seamless_Patterns_For_Website_Backgrounds {
+            get {
+                object obj = ResourceManager.GetObject("White-Gradient-Squares-Seamless-Patterns-For-Website-Backgrounds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

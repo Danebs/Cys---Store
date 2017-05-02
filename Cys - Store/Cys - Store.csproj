@@ -57,8 +57,16 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=7.0.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity.EF6, Version=7.0.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.Data.EntityFrameworkCore, Version=7.0.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=7.0.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web.Net40">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 7.0.7\Assemblies\v4.5.1\MySql.Web.Net40.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,12 +78,80 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assents\Forms\Default_feed\forms\Insere_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assents\Forms\Default_feed\forms\Insere_Usuario.Designer.cs">
+      <DependentUpon>Insere_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assents\Forms\Abouts\SobreEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assents\Forms\Abouts\SobreEmpresa.Designer.cs">
+      <DependentUpon>SobreEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assents\Forms\Abouts\SobreLoja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assents\Forms\Abouts\SobreLoja.Designer.cs">
+      <DependentUpon>SobreLoja.cs</DependentUpon>
+    </Compile>
     <Compile Include="Assents\Forms\Login\Checks.cs" />
     <Compile Include="Assents\Forms\Login\EsqueciSenha.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Assents\Forms\Login\EsqueciSenha.Designer.cs">
       <DependentUpon>EsqueciSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assents\Forms\Sistema\AddProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assents\Forms\Sistema\AddProduto.Designer.cs">
+      <DependentUpon>AddProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assents\Forms\Sistema\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assents\Forms\Sistema\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assents\Forms\Sistema\Mod_Prod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assents\Forms\Sistema\Mod_Prod.Designer.cs">
+      <DependentUpon>Mod_Prod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assents\Forms\Sistema\RemoverProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assents\Forms\Sistema\RemoverProd.Designer.cs">
+      <DependentUpon>RemoverProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assents\Forms\Sistema\Vender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assents\Forms\Sistema\Vender.Designer.cs">
+      <DependentUpon>Vender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assents\Forms\Sistema\Alugar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assents\Forms\Sistema\Alug.Designer.cs">
+      <DependentUpon>Alugar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\CRUD.cs" />
+    <Compile Include="Classes\Sistema.cs" />
+    <Compile Include="CYS_Design.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CYS_Design.Designer.cs">
+      <DependentUpon>CYS_Design.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CYS_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CYS_Main.Designer.cs">
+      <DependentUpon>CYS_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -91,8 +167,41 @@
     <Compile Include="SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Assents\Forms\Default_feed\forms\Insere_Usuario.resx">
+      <DependentUpon>Insere_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assents\Forms\Abouts\SobreEmpresa.resx">
+      <DependentUpon>SobreEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assents\Forms\Abouts\SobreLoja.resx">
+      <DependentUpon>SobreLoja.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Assents\Forms\Login\EsqueciSenha.resx">
       <DependentUpon>EsqueciSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assents\Forms\Sistema\AddProduto.resx">
+      <DependentUpon>AddProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assents\Forms\Sistema\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assents\Forms\Sistema\Mod_Prod.resx">
+      <DependentUpon>Mod_Prod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assents\Forms\Sistema\RemoverProd.resx">
+      <DependentUpon>RemoverProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assents\Forms\Sistema\Vender.resx">
+      <DependentUpon>Vender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assents\Forms\Sistema\Alug.resx">
+      <DependentUpon>Alugar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CYS_Design.resx">
+      <DependentUpon>CYS_Design.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CYS_Main.resx">
+      <DependentUpon>CYS_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -110,6 +219,18 @@
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Classes\Diagrama de classes.dgml" />
+    <None Include="Datasets\Banco_Produto.xsc">
+      <DependentUpon>Banco_Produto.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\Banco_Produto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Include="Datasets\Banco_Produto.xss">
+      <DependentUpon>Banco_Produto.xsd</DependentUpon>
+    </None>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -126,6 +247,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assents\Forms\Login\user.xml" />
+    <Content Include="Assents\Images\Icones\Icons8-Windows-8-Very-Basic-Menu.ico" />
+    <None Include="Assents\Images\White-Gradient-Squares-Seamless-Patterns-For-Website-Backgrounds.jpg" />
     <None Include="Assents\Images\Icones\Alecive-Flatwoken-Apps-Bleachbit.ico" />
     <None Include="Assents\Images\Icones\Awicons-Vista-Artistic-Delete.ico" />
     <None Include="Assents\Images\Icones\Double-J-Design-Origami-Colored-Pencil-Blue-mail-send.ico" />

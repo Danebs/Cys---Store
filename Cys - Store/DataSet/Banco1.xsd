@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Banco1" targetNamespace="http://tempuri.org/Banco1.xsd" xmlns:mstns="http://tempuri.org/Banco1.xsd" xmlns="http://tempuri.org/Banco1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Banco1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Banco1" msprop:Generator_UserDSName="Banco1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GLOBAL" msprop:Generator_TableClassName="GLOBALDataTable" msprop:Generator_TableVarName="tableGLOBAL" msprop:Generator_RowChangedName="GLOBALRowChanged" msprop:Generator_TablePropName="GLOBAL" msprop:Generator_RowDeletingName="GLOBALRowDeleting" msprop:Generator_RowChangingName="GLOBALRowChanging" msprop:Generator_RowEvHandlerName="GLOBALRowChangeEventHandler" msprop:Generator_RowDeletedName="GLOBALRowDeleted" msprop:Generator_RowClassName="GLOBALRow" msprop:Generator_UserTableName="GLOBAL" msprop:Generator_RowEvArgName="GLOBALRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GLOBAL_ID" msdata:ReadOnly="true" msprop:Genprop:Generator_ColumnVarNameInTable="_columnGLOBAL_PRIVILLEGS_" msprop:Generator_ColumnPropNameInRow="_GLOBAL_PRIVILLEGS_" msprop:Generator_ColumnPropNameInTable="_GLOBAL_PRIVILLEGS_Column" msprop:Generator_UserColumnName="GLOBAL_PRIVILLEGS?" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="USER" msprop:Generator_TableClassName="USERDataTable" msprop:Generator_TableVarName="tableUSER" msprop:Generator_RowChangedName="USERRowChanged" msprop:Generator_TablePropName="USER" msprop:Generator_RowDeletingName="USERRowDeleting" msprop:Generator_RowChangingName="USERRowChanging" msprop:Generator_RowEvHandlerName="USERRowChangeEventHandler" msprop:Generator_RowDeletedName="USERRowDeleted" msprop:Generator_RowClassName="USERRow" msprop:Generator_UserTableName="USER" msprop:Generator_RowEvArgName="USERRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_user" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnid_user" msprop:Generator_ColumnPropNameInRow="id_user" msprop:Generator_ColumnPropNameInTable="id_userColumn" msprop:Generator_UserColumnName="id_user" type="xs:int" />
+              <xs:element name="nome_user" msprop:Generator_ColumnVarNameInTable="columnnome_user" msprop:Generator_ColumnPropNameInRow="nome_user" msprop:Generator_ColumnPropNameInTable="nome_userColumn" msprop:Generator_UserColumnName="nome_user" type="xs:string" minOccurs="0" />
+              <xs:element name="senha" msprop:Generator_ColumnVarNameInTable="columnsenha" msprop:Generator_ColumnPropNameInRow="senha" msprop:Generator_ColumnPropNameInTable="senhaColumn" msprop:Generator_UserColumnName="senha" type="xs:string" minOccurs="0" />
+              <xs:element name="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn" msprop:Generator_UserColumnName="email" type="xs:string" minOccurs="0" />
+              <xs:element name="HavePrivillegs" msprop:Generator_ColumnVarNameInTable="columnHavePrivillegs" msprop:Generator_ColumnPropNameInRow="HavePrivillegs" msprop:Generator_ColumnPropNameInTable="HavePrivillegsColumn" msprop:Generator_UserColumnName="HavePrivillegs" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="GLOBALKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GLOBAL" />
+      <xs:field xpath="mstns:GLOBAL_ID" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:USER" />
+      <xs:field xpath="mstns:id_user" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="USER_GLOBAL" msdata:parent="USER" msdata:child="GLOBAL" msdata:parentkey="id_user" msdata:childkey="GLOBAL_ID" msprop:Generator_UserChildTable="GLOBAL" msprop:Generator_ChildPropName="GetGLOBALRows" msprop:Generator_UserRelationName="USER_GLOBAL" msprop:Generator_ParentPropName="USERRow" msprop:Generator_RelationVarName="relationUSER_GLOBAL" msprop:Generator_UserParentTable="USER" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

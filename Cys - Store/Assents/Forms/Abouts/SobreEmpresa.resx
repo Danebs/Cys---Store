@@ -117,41 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Oxygen-Icons.org-Oxygen-Actions-edit-clear-locationbar-ltr" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assents\Images\Icones\Oxygen-Icons.org-Oxygen-Actions-edit-clear-locationbar-ltr.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hat3bN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assents\Images\Hat3bN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="drink-2-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assents\Images\drink-2-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Double-J-Design-Origami-Colored-Pencil-Blue-mail-send" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assents\Images\Icones\Double-J-Design-Origami-Colored-Pencil-Blue-mail-send.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alecive-Flatwoken-Apps-Bleachbit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assents\Images\Icones\Alecive-Flatwoken-Apps-Bleachbit.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fabric-texture-background-black-14945073" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assents\Images\fabric-texture-background-black-14945073.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3b6dc3bfe93bd3a02f921ed36000a2df" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assents\Images\3b6dc3bfe93bd3a02f921ed36000a2df.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fundo-preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assents\Images\fundo-preto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fundo-preto-do-damasco_1048-1044" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assents\Images\fundo-preto-do-damasco_1048-1044.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Awicons-Vista-Artistic-Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assents\Images\Icones\Awicons-Vista-Artistic-Delete.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="glass-34783_640" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assents\Images\glass-34783_640.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="White-Gradient-Squares-Seamless-Patterns-For-Website-Backgrounds" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assents\Images\White-Gradient-Squares-Seamless-Patterns-For-Website-Backgrounds.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
